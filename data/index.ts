@@ -1,3 +1,5 @@
+import { FaPython } from "react-icons/fa6";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -205,13 +207,61 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/sebastianperudev2001",
   },
   {
     id: 2,
     img: "/twit.svg",
+    url: "https://x.com/sebaschavarry",
   },
   {
     id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/sebaschguti/",
+  },
+];
+
+export const tech_stack = [
+  {
+    id: 1,
+    name: "Python",
+    designation: "Advanced uses in AI and ML.",
+    image: "python-logo.png",
+  },
+  {
+    id: 2,
+    name: "TypeScript",
+    designation: "Used for frontend and AWS Lambda functions.",
+    image: "typescript.svg.png",
+  },
+  {
+    id: 3,
+    name: "NextJS",
+    designation: "Experience in production environments.",
+    image: "nextjs.png",
+  },
+  {
+    id: 4,
+    name: "AWS",
+    designation: "Expertise in serverless and event-driven architectures.",
+    image: "aws.png",
+  },
+  {
+    id: 5,
+    name: "PostgreSQL",
+    designation: "Experience in complex queries and performance tuning.",
+    image: "elefante.svg.png",
+  },
+  {
+    id: 6,
+    name: "AWS Bedrock",
+    designation: "Experience in developing AI based solutions.",
+    image: "bedrock.png",
+  },
+  {
+    id: 7,
+    name: "Langchain",
+    designation: "Used for orchestrating genAI agents",
+    image: "langchain.png",
   },
 ];
