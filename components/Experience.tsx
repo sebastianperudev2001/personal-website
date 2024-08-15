@@ -39,9 +39,22 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <h2 className="text-start text-lg text-white-100 mt-3 font-bold">
                   {card.desc}
-                </p>
+                </h2>
+                <div className="flex flex-row justify-between">
+                  <p>{card.date}</p>
+                  <p>{card.location}</p>
+                </div>
+
+                {card.key_points.map((point) => (
+                  <p
+                    key={point}
+                    className="text-start text-white-100 mt-3 font-semibold"
+                  >
+                    {point}
+                  </p>
+                ))}
               </div>
             </div>
           </Button>

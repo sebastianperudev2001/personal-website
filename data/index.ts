@@ -74,23 +74,29 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "IziLyze",
+    des: "IziLyze is a BI platform for IziPay clients, offering interactive dashboards, gamified sales tracking, and an AI assistant for data insights.",
+    img: "/izilyze-demo.svg",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/python-logo.png",
+      "/aws.png",
+    ],
+    link: "https://github.com/sebastianperudev2001/hackathon-izipay",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "ChaFit",
+    des: "ChaFit is a web app that allows users to create custom gym routines, track progress, and generate personalized workout plans using AI, all visualized through an interactive dashboard.",
+    img: "/chatfit.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://github.com/sebastianperudev2001/ChaFit_Backend",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
+    title: "CryptoNita",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
@@ -98,8 +104,8 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "AI Chatbot",
+    des: "Developed an AI-powered RAG chatbot for a public entity, enabling efficient indexing and accurate retrieval of information from their document database.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
@@ -175,31 +181,101 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Engineer",
+    desc: "Blum SAF",
+    location: "New York, USA",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/blum.svg",
+    date: "January 2023 - June 2023", // Sample data
+    key_points: [
+      "Led the development of key features for the company’s main product.",
+      "Collaborated with cross-functional teams to deliver high-quality software.",
+      "Optimized existing codebase, reducing load times by 20%.",
+    ],
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Data Engineer Intern",
+    desc: "Amber",
+    location: "San Francisco, USA",
+    className: "md:col-span-2",
+    thumbnail: "/amber.svg",
+    date: "July 2023 - Present", // Sample data
+    key_points: [
+      "Developed data pipelines to process large-scale datasets.",
+      "Automated data extraction processes, improving efficiency by 30%.",
+      "Collaborated with data scientists to implement machine learning models.",
+    ],
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    title: "Software Engineer Intern",
+    desc: "Belcorp",
+    location: "Lima, Peru",
+    className: "md:col-span-2",
+    thumbnail: "/belcorp.svg",
+    date: "June 2021 - December 2021", // Sample data
+    key_points: [
+      "Assisted in the development of serverless applications using AWS Lambda.",
+      "Participated in code reviews and debugging sessions.",
+      "Contributed to improving the CI/CD pipeline, reducing deployment time by 25%.",
+    ],
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Teaching Assistant",
+    desc: "Universidad de Lima",
+    location: "Lima, Peru",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/ulima.svg",
+    date: "August 2020 - Present", // Sample data
+    key_points: [
+      "Guided students in understanding complex software engineering concepts.",
+      "Assisted in grading assignments and providing constructive feedback.",
+      "Led study sessions to help students prepare for exams.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Software Engineer Intern",
+    desc: "Gestión y Sistemas",
+    location: "Lima, Peru",
+    className: "md:col-span-2",
+    thumbnail: "/gys.svg",
+    date: "January 2020 - May 2020", // Sample data
+    key_points: [
+      "Developed and maintained web applications for retail clients.",
+      "Collaborated with senior engineers to optimize application performance.",
+      "Implemented new features based on client requirements.",
+    ],
+  },
+  {
+    id: 6,
+    title: "Programming Teacher",
+    desc: "Crack the Code",
+    location: "New York, USA",
+    className: "md:col-span-2",
+    thumbnail: "/ctc.svg",
+    date: "September 2019 - December 2019", // Sample data
+    key_points: [
+      "Taught programming fundamentals to beginners.",
+      "Designed and delivered interactive coding workshops.",
+      "Assisted students with troubleshooting coding challenges.",
+    ],
+  },
+  {
+    id: 7,
+    title: "Portfolio Management Intern",
+    desc: "iVisa",
+    location: "Miami, USA",
+    className: "md:col-span-2",
+    thumbnail: "/ivisa.svg",
+    date: "May 2022 - August 2022", // Sample data
+    key_points: [
+      "Supported the portfolio management team with data analysis tasks.",
+      "Developed dashboards to track key performance indicators.",
+      "Conducted research to support investment decisions.",
+    ],
   },
 ];
 
@@ -221,6 +297,8 @@ export const socialMedia = [
   },
 ];
 
+//    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+
 export const tech_stack = [
   {
     id: 1,
@@ -232,13 +310,13 @@ export const tech_stack = [
     id: 2,
     name: "TypeScript",
     designation: "Used for frontend and AWS Lambda functions.",
-    image: "typescript.svg.png",
+    image: "/ts.svg",
   },
   {
     id: 3,
     name: "NextJS",
     designation: "Experience in production environments.",
-    image: "nextjs.png",
+    image: "/next.svg",
   },
   {
     id: 4,
@@ -263,5 +341,11 @@ export const tech_stack = [
     name: "Langchain",
     designation: "Used for orchestrating genAI agents",
     image: "langchain.png",
+  },
+  {
+    id: 8,
+    name: "TailwindCSS",
+    designation: "Used for orchestrating genAI agents",
+    image: "/tail.svg",
   },
 ];
