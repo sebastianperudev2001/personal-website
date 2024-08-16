@@ -1,9 +1,10 @@
 import { FaPython } from "react-icons/fa6";
 
 export const navItems = [
-  { name: "About", link: "#about" },
+  { name: "About", link: "#aboutme" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
+  { name: "Tech Stack", link: "#techstack" },
   { name: "Contact", link: "#contact" },
 ];
 

@@ -4,14 +4,16 @@ import { tech_stack } from "@/data";
 
 const TechnologyStack = () => {
   return (
-    <div className="py-20 w-full">
-      <h1 className="heading">
-        My <span className="text-purple">tech stack</span>
-      </h1>
-      <div className="mb-10 w-full mt-12 grid lg:grid-cols-8 grid-cols-1 gap-4">
-        <TechButton items={tech_stack} />
+    <section id="techstack">
+      <div className="py-20 w-full">
+        <h1 className="heading">
+          My <span className="text-purple">tech stack</span>
+        </h1>
+        <div className="mb-10 w-full mt-12 grid lg:grid-cols-8 grid-cols-1 gap-4">
+          <TechButton items={tech_stack} />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default TechnologyStack;
