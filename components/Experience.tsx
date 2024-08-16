@@ -47,14 +47,11 @@ const Experience = () => {
                   <p>{card.location}</p>
                 </div>
 
-                {card.key_points.map((point) => (
-                  <p
-                    key={point}
-                    className="text-start text-white-100 mt-3 font-semibold"
-                  >
-                    {point}
-                  </p>
-                ))}
+                <ul className="list-disc list-inside text-start text-white-100 mt-3 font-semibold">
+                  {card.key_points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </Button>

@@ -10,64 +10,30 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
+    title: "AWS All Builders Welcome Grant",
+    description:
+      "Selected among global candidates to attend AWS re:Inforce 2024 in Philadelphia, focusing on cloud security and innovation.",
+    img: "/aws_reinforce.jpeg",
+    imgAlt: "aws_reinforce",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "Izipay Hackathon Winner",
+    description:
+      "Won second place for creating an AI-powered business intelligence solution for small businesses after market research and pitching.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
+    img: "/izipay-winner.jpeg",
+    imgAlt: "izipay_hackaizi_hackathon",
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
+    title: "Top Graduate in Software Engineering",
+    description:
+      "Graduated 2nd in a class of 62 in Software Engineering at Universidad de Lima, demonstrating academic excellence and technical expertise",
+    img: "/ulima.jpg",
+    imgAlt: "ulima_ingenieria_sistemas",
   },
 ];
 
@@ -98,7 +64,7 @@ export const projects = [
     id: 3,
     title: "CryptoNita",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    img: "/cryptonita.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
   },
@@ -106,7 +72,7 @@ export const projects = [
     id: 4,
     title: "AI Chatbot",
     des: "Developed an AI-powered RAG chatbot for a public entity, enabling efficient indexing and accurate retrieval of information from their document database.",
-    img: "/p4.svg",
+    img: "/ai_chatbot.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
   },
@@ -183,42 +149,40 @@ export const workExperience = [
     id: 1,
     title: "Software Engineer",
     desc: "Blum SAF",
-    location: "New York, USA",
-    className: "md:col-span-2",
+    location: "Lima, Peru",
     thumbnail: "/blum.svg",
-    date: "January 2023 - June 2023", // Sample data
+    date: "Aug 2024 - Present", // Sample data
     key_points: [
-      "Led the development of key features for the company’s main product.",
-      "Collaborated with cross-functional teams to deliver high-quality software.",
-      "Optimized existing codebase, reducing load times by 20%.",
+      "Built and enhanced product features using Next.js.",
+      "Created and integrated microservices on AWS Lambda for API use.",
+      "Implemented IaC to deploy solutions for internal and external users",
     ],
   },
   {
     id: 2,
-    title: "Data Engineer Intern",
+    title: "Data Engineer",
     desc: "Amber",
-    location: "San Francisco, USA",
-    className: "md:col-span-2",
+    location: "Lima, Peru",
     thumbnail: "/amber.svg",
-    date: "July 2023 - Present", // Sample data
+    date: "Mar 2024 - Jul 2024", // Sample data
     key_points: [
-      "Developed data pipelines to process large-scale datasets.",
-      "Automated data extraction processes, improving efficiency by 30%.",
-      "Collaborated with data scientists to implement machine learning models.",
+      "Architected a RAG chatbot using Langchain, AWS Bedrock, and Kendra for document retrieval from a public entity's legacy database.",
+      "Designed a diabetes treatment chatbot with AI-generated personalized reminders.",
+      "Built internal tools for document processing and automated data retrieval.",
     ],
   },
   {
     id: 3,
-    title: "Software Engineer Intern",
+    title: "Software Engineer",
     desc: "Belcorp",
     location: "Lima, Peru",
     className: "md:col-span-2",
     thumbnail: "/belcorp.svg",
-    date: "June 2021 - December 2021", // Sample data
+    date: "May 2023 - Feb 2024", // Sample data
     key_points: [
-      "Assisted in the development of serverless applications using AWS Lambda.",
-      "Participated in code reviews and debugging sessions.",
-      "Contributed to improving the CI/CD pipeline, reducing deployment time by 25%.",
+      "Led development of 20 RPA solutions in Python, enhancing efficiency for tech and commercial teams.",
+      "Collaborated with the architecture team to modernize a legacy payroll system with serverless AWS architecture.",
+      "Developed web scraping bots, streamlining data integration.",
     ],
   },
   {
@@ -228,53 +192,48 @@ export const workExperience = [
     location: "Lima, Peru",
     className: "md:col-span-2",
     thumbnail: "/ulima.svg",
-    date: "August 2020 - Present", // Sample data
+    date: "Apr 2023 - Jul 2024", // Sample data
     key_points: [
-      "Guided students in understanding complex software engineering concepts.",
-      "Assisted in grading assignments and providing constructive feedback.",
-      "Led study sessions to help students prepare for exams.",
+      "Assisted students with technical issues and bug resolution in data analysis, Android development, and web development.",
+      "Monitored exams and addressed student questions.",
+      "Supported professors during lectures.",
     ],
   },
   {
     id: 5,
-    title: "Software Engineer Intern",
+    title: "Software Engineer",
     desc: "Gestión y Sistemas",
     location: "Lima, Peru",
-    className: "md:col-span-2",
     thumbnail: "/gys.svg",
-    date: "January 2020 - May 2020", // Sample data
+    date: "Oct 2022 - MAy 2023", // Sample data
     key_points: [
-      "Developed and maintained web applications for retail clients.",
-      "Collaborated with senior engineers to optimize application performance.",
-      "Implemented new features based on client requirements.",
+      "Completed a Web Development Bootcamp, distinguishing myself among 50 participants.",
+      "Developed Angular components to improve the user interface for an e-commerce management system.",
+      "Created and integrated REST APIs using .NET to enhance system connectivity and data exchange.",
     ],
   },
   {
     id: 6,
     title: "Programming Teacher",
     desc: "Crack the Code",
-    location: "New York, USA",
-    className: "md:col-span-2",
+    location: "Lima, Peru",
     thumbnail: "/ctc.svg",
-    date: "September 2019 - December 2019", // Sample data
+    date: "Jun 2022 - Apr 2023", // Sample data
     key_points: [
-      "Taught programming fundamentals to beginners.",
-      "Designed and delivered interactive coding workshops.",
-      "Assisted students with troubleshooting coding challenges.",
+      "Taught weekly programming courses to over 50 Latin American students, enhancing their computational thinking skills.",
+      "Provided technical assistance to women in a Bogotá web development course, ensuring successful program completion.",
     ],
   },
   {
     id: 7,
     title: "Portfolio Management Intern",
     desc: "iVisa",
-    location: "Miami, USA",
-    className: "md:col-span-2",
+    location: "Lima, Peru",
     thumbnail: "/ivisa.svg",
-    date: "May 2022 - August 2022", // Sample data
+    date: "Jul 2022 - Oct 2022", // Sample data
     key_points: [
-      "Supported the portfolio management team with data analysis tasks.",
-      "Developed dashboards to track key performance indicators.",
-      "Conducted research to support investment decisions.",
+      "Identified and added new products to the platform's portfolio.",
+      "Collaborated with multiple teams to enhance user experience.",
     ],
   },
 ];
