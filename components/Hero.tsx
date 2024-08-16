@@ -47,7 +47,7 @@ const Hero = () => {
             Software Engineer with expertise in AI, AWS and Web Development
           </p>
 
-          <a href="#about">
+          <a href="#aboutme">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
