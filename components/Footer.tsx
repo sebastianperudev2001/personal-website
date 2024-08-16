@@ -22,7 +22,8 @@ const Footer = () => {
             <span className="text-purple">AI</span>?
           </h1>
           <p className="text-white-200 md:mt-10 my-5 text-center">
-            Let's connect and discuss how can I help you with your next project.
+            Let&#39;s connect and discuss how can I help you with your next
+            project.
           </p>
           <a href="mailto:schavarry01@gmail.com">
             <MagicButton
@@ -38,8 +39,8 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center md:gap-3 gap-6">
-            {socialMedia.map((info) => (
-              <a href={info.url} target="_blank">
+            {socialMedia.map((info, index) => (
+              <a key={index} href={info.url} target="_blank">
                 <div
                   key={info.id}
                   className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
