@@ -264,7 +264,7 @@ export const tech_stack = [
     id: 1,
     name: "Python",
     designation: "Advanced uses in AI and ML.",
-    image: "python-logo.png",
+    image: "/python-logo.png",
   },
   {
     id: 2,
@@ -282,25 +282,25 @@ export const tech_stack = [
     id: 4,
     name: "AWS",
     designation: "Expertise in serverless and event-driven architectures.",
-    image: "aws.png",
+    image: "/aws.png",
   },
   {
     id: 5,
     name: "PostgreSQL",
     designation: "Experience in complex queries and performance tuning.",
-    image: "elefante.svg.png",
+    image: "/elefante.svg.png",
   },
   {
     id: 6,
     name: "AWS Bedrock",
     designation: "Experience in developing AI based solutions.",
-    image: "bedrock.png",
+    image: "/bedrock.png",
   },
   {
     id: 7,
     name: "Langchain",
     designation: "Used for orchestrating genAI agents",
-    image: "langchain.png",
+    image: "/langchain.png",
   },
   {
     id: 8,

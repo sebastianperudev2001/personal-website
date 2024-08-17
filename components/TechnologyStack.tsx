@@ -1,5 +1,6 @@
 import React from "react";
 import { tech_stack } from "@/data";
+import Image from "next/image";
 
 const TechnologyStack = () => {
   return (
@@ -34,7 +35,13 @@ const TechButton = ({
           key={idx}
           className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 flex items-center justify-center h-auto"
         >
-          <img src={item.image} alt={item.name} className="mr-2 h-6 w-6" />
+          <Image
+            width={500}
+            height={500}
+            src={item.image}
+            alt={item.name}
+            className="mr-2 h-6 w-6"
+          />
           {item.name}
         </div>
       ))}

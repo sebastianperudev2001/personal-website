@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -43,7 +44,9 @@ export const BentoGridItem = ({
         <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300 mb-4">
           {description}
         </div>
-        <img
+        <Image
+          width={500}
+          height={400}
           src={image}
           alt={imgAlt}
           className="w-full h-32 md:h-40 lg:h-40 xl:h-48 object-cover rounded-lg"
