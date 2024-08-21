@@ -66,7 +66,7 @@ export const projects = [
   {
     id: 3,
     title: "CryptoNita",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    des: "Simulation of crypto transactions. Made for Web Dev final project. Learnt about CRUD operations about API and how to use them.",
     img: "/cryptonita.png",
     alt: "cryptonita demo crypto bitcoin ulima programación web proyecto",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
@@ -221,7 +221,7 @@ export const workExperience = [
     location: "Lima, Peru",
     thumbnail: "/gys.jpeg",
     alt: "gestion y sistemas software engineer peru angular .net consultoria peru",
-    date: "Oct 2022 - MAy 2023", // Sample data
+    date: "Oct 2022 - May 2023", // Sample data
     key_points: [
       "Completed a Web Development Bootcamp, distinguishing myself among 50 participants.",
       "Developed Angular components to improve the user interface for an e-commerce management system.",
