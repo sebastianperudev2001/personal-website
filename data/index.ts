@@ -243,7 +243,7 @@ export const workExperience = [
   },
   {
     id: 7,
-    title: "Portfolio Management Intern",
+    title: "Portfolio Management",
     desc: "iVisa",
     alt: "ivisa startup peru lima intern portfolio management",
     location: "Lima, Peru",
