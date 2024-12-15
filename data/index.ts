@@ -33,7 +33,8 @@ export const gridItems = [
     title: "Top Graduate in Software Engineering",
     description:
       "Graduated 2nd in a class of 62 in Software Engineering at Universidad de Lima, demonstrating academic excellence and technical expertise",
-    img: "/ulima.jpg",
+    img: "/grad.jpg",
+    className: "bg-center",
     imgAlt: "ulima_ingenieria_sistemas",
   },
 ];
@@ -251,6 +252,7 @@ export const workExperience = [
     date: "Jul 2022 - Oct 2022", // Sample data
     key_points: [
       "Identified and added new products to the platform's portfolio.",
+
       "Collaborated with multiple teams to enhance user experience.",
     ],
   },

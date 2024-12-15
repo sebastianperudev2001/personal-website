@@ -8,7 +8,7 @@ const Grid = () => {
         <h1 className="heading">
           About <span className="text-purple">me</span>
         </h1>
-        <div className="mt-10 p-4 gap-16"></div>
+        <div className="mt-10 p-4 gap-16 "></div>
         <BentoGrid>
           {gridItems.map((item, i) => (
             <BentoGridItem
