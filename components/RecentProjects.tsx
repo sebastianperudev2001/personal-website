@@ -1,89 +1,97 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-import Image from "next/image";
-import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
+import React from "react";
+import { ExternalLink, Github } from "lucide-react";
 
 const RecentProjects = () => {
+  const projects = [
+    {
+      title: "Portfolio Website",
+      description:
+        "Personal portfolio built with Next.js, TypeScript, and Tailwind CSS. Features responsive design and modern animations.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/sebastian/portfolio",
+      live: "https://sebastian.dev",
+    },
+    {
+      title: "AI Chat Application",
+      description:
+        "Real-time chat application with AI integration. Built with React, Node.js, and OpenAI API.",
+      tech: ["React", "Node.js", "OpenAI API", "Socket.io"],
+      github: "https://github.com/sebastian/ai-chat",
+      live: "https://ai-chat.sebastian.dev",
+    },
+    {
+      title: "E-commerce Platform",
+      description:
+        "Full-stack e-commerce platform with payment processing and admin dashboard.",
+      tech: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
+      github: "https://github.com/sebastian/ecommerce",
+      live: "https://shop.sebastian.dev",
+    },
+  ];
+
   return (
-    <section id="projects">
-      <div className="py-20 w-full">
-        <h1 className="heading">
-          Some of my <span className="text-purple">personal projects</span>
-        </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-          {projects.map((item) => (
-            <div
-              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-              key={item.id}
-            >
-              <PinContainer title={item.title} href={item.link}>
-                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] xl:h-[22vh]  mb-10">
-                  <div
-                    className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                    style={{ backgroundColor: "#13162D" }}
-                  >
-                    <Image width={500} height={500} src="/bg.png" alt="bgimg" />
-                  </div>
-                  <Image
-                    width={500}
-                    height={200}
-                    src={item.img}
-                    alt="cover"
-                    className="z-10 absolute bottom-0"
-                  />
-                </div>
-
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                  {item.title}
-                </h1>
-
-                <p
-                  className="lg:text-xl lg:font-normal font-light text-sm"
-                  style={{
-                    color: "#BEC1DD",
-                    margin: "1vh 0",
-                  }}
-                >
-                  {item.des}
-                </p>
-
-                <div className="flex items-center justify-between mt-7 mb-3">
-                  <div className="flex items-center">
-                    {item.iconLists.map((icon, index) => (
-                      <div
-                        key={index}
-                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center "
-                        style={{
-                          transform: `translateX(-${5 * index + 2}px)`,
-                        }}
-                      >
-                        <Image
-                          width={500}
-                          height={500}
-                          src={icon}
-                          alt="icon5"
-                          className="p-2"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  {/* 
-                            <div className="flex justify-center items-center">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                      Check Repo
-                    </p>
-                    <FaLocationArrow className="ms-3" color="#CBACF9" />
-                  </div>
-                    */}
-                </div>
-              </PinContainer>
-            </div>
-          ))}
-        </div>
+    <div className="space-y-8">
+      <div className="border-l-4 border-black pl-6">
+        <h2 className="font-mono text-2xl font-bold text-black mb-2">
+          ./projects
+        </h2>
+        <p className="font-mono text-gray-600">
+          Production systems that actually work.
+        </p>
       </div>
-    </section>
+
+      <div className="space-y-6">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="border-2 border-gray-200 p-6 hover:border-black transition-colors duration-200"
+          >
+            <div className="space-y-4">
+              <div className="flex items-start justify-between">
+                <h3 className="font-mono text-xl font-bold text-black">
+                  {project.title}
+                </h3>
+                <div className="flex gap-3">
+                  <a
+                    href={project.github}
+                    className="text-gray-600 hover:text-black transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github size={20} />
+                  </a>
+                  <a
+                    href={project.live}
+                    className="text-gray-600 hover:text-black transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink size={20} />
+                  </a>
+                </div>
+              </div>
+
+              <p className="font-mono text-sm text-gray-700">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="font-mono text-xs px-3 py-1 bg-gray-100 text-black border border-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

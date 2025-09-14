@@ -1,62 +1,76 @@
 import React from "react";
-import Image from "next/image";
-import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
+  const experiences = [
+    {
+      role: "Software Engineer",
+      company: "Freelance",
+      period: "2023 - Present",
+      description:
+        "Building scalable web applications and AI solutions. Specialized in React, Node.js, and AWS cloud services.",
+      tech: ["React", "Node.js", "AWS", "TypeScript"],
+    },
+    {
+      role: "Full Stack Developer",
+      company: "Tech Solutions",
+      period: "2022 - 2023",
+      description:
+        "Developed and maintained web applications. Implemented CI/CD pipelines and optimized database performance.",
+      tech: ["JavaScript", "Python", "PostgreSQL", "Docker"],
+    },
+    {
+      role: "Frontend Developer",
+      company: "Digital Agency",
+      period: "2021 - 2022",
+      description:
+        "Created responsive user interfaces and improved user experience. Collaborated with design and backend teams.",
+      tech: ["React", "CSS", "HTML", "Git"],
+    },
+  ];
+
   return (
-    <section id="experience">
-      <div className="py-20 w-full">
-        <h1 className="heading">
-          My <span className="text-purple">work experience</span>
-        </h1>
+    <div className="space-y-8">
+      <div className="border-l-4 border-black pl-6">
+        <h2 className="font-mono text-2xl font-bold text-black mb-2">
+          ./experience
+        </h2>
+        <p className="font-mono text-gray-600">
+          Building systems that don&apos;t break.
+        </p>
+      </div>
 
-        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-          {workExperience.map((card) => (
-            <Button
-              key={card.id}
-              duration={Math.floor(Math.random() * 10000) + 10000}
-              borderRadius="1.75rem"
-              style={{
-                background: "rgb(4,7,29)",
-                backgroundColor:
-                  "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-                borderRadius: `calc(1.75rem* 0.96)`,
-              }}
-              className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-            >
-              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 w-full">
-                <Image
-                  width={500}
-                  height={500}
-                  src={card.thumbnail}
-                  alt={card.thumbnail}
-                  className="lg:w-32 md:w-20 w-16"
-                />
-                <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold">
-                    {card.title}
-                  </h1>
-                  <h2 className="text-start text-lg text-white-100 mt-3 font-bold">
-                    {card.desc}
-                  </h2>
-                  <div className="flex flex-row justify-between">
-                    <p>{card.date}</p>
-                    <p>{card.location}</p>
-                  </div>
-
-                  <ul className="list-disc list-inside text-start text-white-100 mt-3 font-semibold">
-                    {card.key_points.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
+      <div className="space-y-6">
+        {experiences.map((exp, index) => (
+          <div key={index} className="border-l-2 border-gray-300 pl-6">
+            <div className="space-y-3">
+              <div>
+                <h3 className="font-mono text-lg font-bold text-black">
+                  {exp.role}
+                </h3>
+                <div className="font-mono text-sm text-gray-600">
+                  {exp.company} • {exp.period}
                 </div>
               </div>
-            </Button>
-          ))}
-        </div>
+
+              <p className="font-mono text-sm text-gray-700">
+                {exp.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {exp.tech.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="font-mono text-xs px-2 py-1 bg-gray-100 text-black border border-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

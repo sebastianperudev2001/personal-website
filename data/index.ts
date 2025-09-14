@@ -5,7 +5,7 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Tech Stack", link: "#techstack" },
-  { name: "Contact", link: "#contact" },
+  { name: "Contact", link: "/contacto" },
 ];
 
 export const gridItems = [
@@ -164,7 +164,7 @@ export const workExperience = [
     location: "Lima, Peru",
     thumbnail: "/blum.svg",
     alt: "blum saf software engineer peru fintech",
-    date: "Aug 2024 - Present", // Sample data
+    date: "Aug 2024 - Present",
     key_points: [
       "Built and enhanced product features using Next.js.",
       "Created and integrated microservices on AWS Lambda for API use.",
@@ -178,7 +178,7 @@ export const workExperience = [
     location: "Lima, Peru",
     thumbnail: "/amber.jpeg",
     alt: "amber data engineer cloud consulting peru aws partner",
-    date: "Mar 2024 - Jul 2024", // Sample data
+    date: "Mar 2024 - Jul 2024",
     key_points: [
       "Architected a RAG chatbot using Langchain, AWS Bedrock, and Kendra for document retrieval from a public entity's legacy database.",
       "Designed a diabetes treatment chatbot with AI-generated personalized reminders.",
@@ -193,7 +193,7 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/belcorp.jpeg",
     alt: "belcorp software engineer peru rpa python aws",
-    date: "May 2023 - Feb 2024", // Sample data
+    date: "May 2023 - Feb 2024",
     key_points: [
       "Led development of 20 RPA solutions in Python, enhancing efficiency for tech and commercial teams.",
       "Collaborated with the architecture team to modernize a legacy payroll system with serverless AWS architecture.",
@@ -208,7 +208,7 @@ export const workExperience = [
     location: "Lima, Peru",
     className: "md:col-span-2",
     thumbnail: "/ulima_logo.jpeg",
-    date: "Apr 2023 - Jul 2024", // Sample data
+    date: "Apr 2023 - Jul 2024",
     key_points: [
       "Assisted students with technical issues and bug resolution in data analysis, Android development, and web development.",
       "Monitored exams and addressed student questions.",
@@ -222,7 +222,7 @@ export const workExperience = [
     location: "Lima, Peru",
     thumbnail: "/gys.jpeg",
     alt: "gestion y sistemas software engineer peru angular .net consultoria peru",
-    date: "Oct 2022 - May 2023", // Sample data
+    date: "Oct 2022 - May 2023",
     key_points: [
       "Completed a Web Development Bootcamp, distinguishing myself among 50 participants.",
       "Developed Angular components to improve the user interface for an e-commerce management system.",
@@ -236,7 +236,7 @@ export const workExperience = [
     location: "Lima, Peru",
     thumbnail: "/ctc.jpeg",
     alt: "crack the code profesor de programacion startup peru lima",
-    date: "Jun 2022 - Apr 2023", // Sample data
+    date: "Jun 2022 - Apr 2023",
     key_points: [
       "Taught weekly programming courses to over 50 Latin American students, enhancing their computational thinking skills.",
       "Provided technical assistance to women in a Bogotá web development course, ensuring successful program completion.",
