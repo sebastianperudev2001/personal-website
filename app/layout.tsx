@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import Footer from "@/components/Footer";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
@@ -32,7 +31,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

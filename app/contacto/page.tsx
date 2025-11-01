@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Footer from "@/components/Footer";
 import ContactFormPage from "@/components/ContactFormPage";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -28,8 +27,6 @@ const ContactPage = () => {
           <ContactFormPage />
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };
